@@ -192,3 +192,6 @@ plugins:
         - locale: nb
           name: Norsk Bokmål
           build: true
+
+static_templates:
+  - 404.html
