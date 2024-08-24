@@ -2,7 +2,8 @@
 site_name: Monero Docs
 site_description: 'Monero Documentation'
 site_author: "Monero Community"
-site_url: 'https://docs.getmonero.org'
+#site_url: 'https://docs.getmonero.org'
+site_url: 'https://docs.noncebynonce.xyz'
 site_dir: 'public'
 
 copyright: '© 2024 Monero Community under <a href="https://opensource.org/licenses/MIT">MIT</a>'
@@ -95,15 +96,15 @@ theme:
         name: Switch to light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: indigo
-      accent: indigo
+      primary: white
+      accent: deep-orange
       toggle:
         icon: material/toggle-switch
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: black
-      accent: indigo
+      accent: deep-orange
       toggle:
         icon: material/toggle-switch-off
         name: Switch to system preference
@@ -114,6 +115,8 @@ theme:
   icon:
     logo: logo
   logo: 'images/monero.svg'
+  static_templates:
+    - 404.html
 
 extra_css: ['overrides.css']
 
@@ -157,42 +160,4 @@ plugins:
         - locale: fr
           name: Français
           build: true
-        - locale: es
-          name: Español
-          build: true
-        - locale: it
-          name: Italiano
-          build: true
-        - locale: pl
-          name: Polski
-          build: true
-        - locale: ar
-          name: العربية
-          build: true
-        - locale: ru
-          name: Русский
-          build: true
-        - locale: de
-          name: Deutsch
-          build: true
-        - locale: nl
-          name: Nederlands
-          build: true
-        - locale: pt
-          name: Português
-          build: true
-        - locale: tr
-          name: Türkçe
-          build: true
-        - locale: zh
-          name: 中文 (简体)
-          build: true
-        - locale: zh-TW
-          name: 中文 (繁體)
-          build: true
-        - locale: nb
-          name: Norsk Bokmål
-          build: true
 
-static_templates:
-  - 404.html
