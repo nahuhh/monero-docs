@@ -2,7 +2,8 @@
 site_name: Monero Docs
 site_description: 'Monero Documentation'
 site_author: "Monero Community"
-site_url: 'https://docs.getmonero.org'
+#site_url: 'https://docs.getmonero.org'
+site_url: 'https://docs.noncebynonce.xyz'
 site_dir: 'public'
 
 copyright: '© 2024 Monero Community under <a href="https://opensource.org/licenses/MIT">MIT</a>'
