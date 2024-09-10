@@ -4,6 +4,10 @@ WORKDIR /monero-docs
 
 COPY . /monero-docs
 
+RUN apk update
+
+RUN apk add -y git
+
 RUN pip install -r requirements.txt
 
 RUN mkdocs build
