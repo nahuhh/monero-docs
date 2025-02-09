@@ -1,15 +1,28 @@
 ---
-title: RandomX
----
-# RandomX
+title: "RandomX"
 
+translationOutdated: "no"
+contentOutdated: "no"
+---
+
+<!-- If the English version is outdated, all versions (for all languages) will be outdated. No need to check the state of the translations. -->
+{% if contentOutdated == "yes" %}
+## **{{ notices.outdatedContent }}**
+
+<!-- If page is translated but the English version was updated, the translation is outdated -->
+{% elif translationOutdated == "yes" %}
+## **{{ notices.outdatedTranslation }}**
+{% endif %}
+
+<!-- Show the body -->
+# RandomX
 !!! info ""
-    **_Written in 2019_**    
+    **_Written in 2019_**
     Pulled from [Monero Outreach](https://github.com/monero-ecosystem/outreach-docs/blob/master/monero-outreach-docs%2Fen%2Fstoryboard%2FrandomX_en.md).
 
-**Monero and Arweave to Validate the Proof-of-Work Algorithm. - 5th of June, 2019** 
+**Monero and Arweave to Validate the Proof-of-Work Algorithm. - 5th of June, 2019**
 
-What year is it? It seems like only yesterday they were saying that a privacy coin couldn’t be pruned and that ASICs will win in the end. But here we are...about to prune and talking about RandomX...wearing our space helmets. RandomX still must go through the process of becoming tried and true, but it’s an exciting part of Monero’s pipeline. This guide gives an overview of its nature and plans, and where you can learn more. 
+What year is it? It seems like only yesterday they were saying that a privacy coin couldn’t be pruned and that ASICs will win in the end. But here we are...about to prune and talking about RandomX...wearing our space helmets. RandomX still must go through the process of becoming tried and true, but it’s an exciting part of Monero’s pipeline. This guide gives an overview of its nature and plans, and where you can learn more.
 
 ### _What is RandomX?_
 
