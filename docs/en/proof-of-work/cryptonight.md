@@ -1,5 +1,7 @@
 ---
 title: CryptoNight
+folder: "proof-of-work"
+lang: "en"
 ---
 # CryptoNight
 
@@ -93,7 +95,7 @@ The next payload is encryption result of the previous payload.
 
 Each 128-byte payload is actually encrypted 10 times.
 
-The details are a bit more nuanced, see "Scratchpad Initialization" in [CryptoNote Standard](https://cryptonote.org/cns/cns008.txt).  
+The details are a bit more nuanced, see "Scratchpad Initialization" in [CryptoNote Standard.](../../files/proof-of-work/cns008.txt)
 
 ### Step 2: memory-hard loop
 
