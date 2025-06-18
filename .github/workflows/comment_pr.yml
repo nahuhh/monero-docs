@@ -2,7 +2,7 @@ name: PR Comment Workflow
 on:
   workflow_dispatch:
   pull_request_target:
-    types: [opened]
+    types: [opened, synchronize]
 jobs:
   comment-on-pr:
     runs-on: ubuntu-latest
