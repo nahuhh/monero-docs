@@ -16,5 +16,6 @@ jobs:
             issue_number: context.issue.number,
             owner: context.repo.owner,
             repo: context.repo.repo,
+            body: `|What|Link|\n|:---:|:---|\n|🕵️‍♂️ Review|[Files Changed](https://github.com/${context.repo.owner}/${context.repo.repo}/pull/${context.issue.number}/files)|\n|🌐 Preview|[#${context.issue.number}](https://${context.issue.number}.md.monerodevs.org)|`
             body: `https://${context.issue.number}.md.monerodevs.org/`
           })
