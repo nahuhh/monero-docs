@@ -515,7 +515,7 @@ curl http://127.0.0.1:18081/json_rpc \
       "ip": 838969536,
       "seconds": 28
     }],
-    "status": "OK"
+    "status": "OK",
     "untrusted": false
   }
 }
@@ -1030,6 +1030,7 @@ curl http://127.0.0.1:18081/json_rpc \
     "untrusted": false,
     "wide_difficulty": "0x34cec55820"
   }
+}
 ```
 
 
@@ -1176,11 +1177,8 @@ curl http://127.0.0.1:18081/json_rpc \
       "send_idle_time": 8,
       "state": "normal",
       "support_flags": 1
-    },{
-
-    ...
-    }],
-    "status": "OK"
+    }, ...],
+    "status": "OK",
     "untrusted": false
   }
 }
@@ -2134,18 +2132,7 @@ curl http://127.0.0.1:18081/json_rpc \
         "state": "normal",
         "support_flags": 1
       }
-    },{
-
-      "info": {
-        ...
-      }
-    },{
-      ...
-    },{
-      ...
-    },{
-      ...
-    }],
+    }, ...],
     "status": "OK",
     "target_height": 2287203,
     "top_hash": "",
@@ -2196,11 +2183,7 @@ curl http://127.0.0.1:18081/get_alt_blocks_hashes \
   "credits": 0,
   "status": "OK",
   "top_hash": "",
-    "untrusted": false
-    "untrusted": false
-  }
   "untrusted": false
-  }
 }
 ```
 
@@ -2632,8 +2615,7 @@ curl http://127.0.0.1:18081/get_peer_list \
     "ip": 2183731038,
     "last_seen": 1525540499,
     "port": 28080
-  }, ...
-  ],
+  }, ...],
   "status": "OK",
   "white_list": [{
     "host": "1221637955",
@@ -2647,8 +2629,7 @@ curl http://127.0.0.1:18081/get_peer_list \
     "ip": 1780407354,
     "last_seen": 1525540510,
     "port": 18080
-  }, ...
-  ]
+  }, ...]
 }
 ```
 
@@ -2805,8 +2786,7 @@ curl http://127.0.0.1:18081/get_transaction_pool \
   },{
     "id_hash": "b583a134ccd6fd48697f02f530e82604f746b97ce26de103fa756d91274ac60e",
     "txs_hashes": ["0b1839626bd7a609d5b16966396a51eb5fda9c55b9b2fc314a916459a7532e02"]
-  },
-  ...],
+  }, ...],
   "status": "OK",
   "transactions": [{
     "blob_size": 2217,
@@ -2825,8 +2805,7 @@ curl http://127.0.0.1:18081/get_transaction_pool \
     "tx_blob": " ... ",
     "tx_json": "{\n  \"version\": 2, \n  \"unlock_time\": 0, \n  \"vin\": [ {\n      \"key\": {\n        \"amount\": 0, \n        \"key_offsets\": [ 54937085, 875767, 6217742, 360564, 431709, 807289, 138472, 6221, 111408, 42881, 145, 12396, 20911, 899, 3546, 112\n        ], \n        \"k_image\": \"b583a134ccd6fd48697f02f530e82604f746b97ce26de103fa756d91274ac60e\"\n      }\n    }, {\n      \"key\": {\n        \"amount\": 0, \n        \"key_offsets\": [ 28132301, 33525919, 17414, 2042026, 73478, 73012, 54330, 8150, 5725, 10740, 4581, 7687, 9290, 592, 994, 725\n        ], \n        \"k_image\": \"5b5d68e7eb5ddfc7dd30d9a91f1db6835563b0214b66dc0b791909fb46c9cbb4\"\n      }\n    }\n  ], \n  \"vout\": [ {\n      \"amount\": 0, \n      \"target\": {\n        \"tagged_key\": {\n          \"key\": \"2849325ea3410c1378ab631c4e008028a99843a767c1d11019631cad8e083b53\", \n          \"view_tag\": \"1f\"\n        }\n      }\n    }, {\n      \"amount\": 0, \n      \"target\": {\n        \"tagged_key\": {\n          \"key\": \"9677c3568218bab3dc1a6eee5b486eeb372c9b2c7d552d8f9c6c84bd4051bab8\", \n          \"view_tag\": \"ee\"\n        }\n      }\n    }\n  ], \n  \"extra\": [ 1, 110, 21, 19, 40, 178, 62, 51, 216, 134, 71, 171, 159, 249, 160, 206, 100, 247, 190, 162, 177, 0, 35, 237, 165, 157, 42, 84, 52, 25, 151, 202, 231, 2, 9, 1, 195, 62, 127, 79, 4, 67, 161, 64\n  ], \n  ... }\n}",
     "weight": 2217
-  },
-  ...]
+  }, ...]
 }
 ```
 
@@ -2945,8 +2924,7 @@ curl http://127.0.0.1:18081/get_transaction_pool_stats \
     "bytes_min": 1450,
     "bytes_total": 410674,
     "fee_total": 18198895000,
-    "histo": [{ ...
-    }],
+    "histo": [ ... ],
     "histo_98pc": 297,
     "num_10m": 1,
     "num_double_spends": 1,
@@ -2958,7 +2936,6 @@ curl http://127.0.0.1:18081/get_transaction_pool_stats \
   "status": "OK",
   "top_hash": "",
   "untrusted": false
-
 }
 ```
 
@@ -3516,7 +3493,7 @@ curl http://127.0.0.1:18081/set_limit \
 {
   "limit_down": 1024,
   "limit_up": 128,
-  "status": "OK"
+  "status": "OK",
   "untrusted": false
 }
 ```
@@ -3620,7 +3597,7 @@ curl http://127.0.0.1:18081/set_log_categories \
 ```json title="Response"
 {
   "categories": "*:WARNING,net:FATAL,net.p2p:FATAL,net.cn:FATAL,global:INFO,verify:FATAL,stacktrace:INFO,logging:INFO,msgwriter:INFO",
-  "status": "OK"
+  "status": "OK",
   "untrusted": false
 }
 ```
@@ -3654,7 +3631,7 @@ curl http://127.0.0.1:18081/set_log_hash_rate \
 
 ```json title="Response"
 {
-  "status": "OK"
+  "status": "OK",
   "untrusted": false
 }
 ```
@@ -3706,7 +3683,7 @@ curl http://127.0.0.1:18081/set_log_level \
 
 ```json title="Response"
 {
-  "status": "OK"
+  "status": "OK",
   "untrusted": false
 }
 ```

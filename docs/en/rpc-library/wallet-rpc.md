@@ -844,7 +844,7 @@ curl http://127.0.0.1:18088/json_rpc \
       "change_address": "5BqWeZrK944YesCy5VdmBneWeaSZutEijFVAKjpVHeVd4unsCSM55CjgViQsK9WFNHK1eZgcCuZ3fRqYpzKDokqSUmQfJzvswQs13AAidJ",
       "change_amount": 4976287087263,
       "dummy_outputs": 0,
-      "extra": 01b998f16459bcbac9c92074d3128d10724f10b74f5a7b1ec8e5a1e7f1150544020209010000000000000000",
+      "extra": "01b998f16459bcbac9c92074d3128d10724f10b74f5a7b1ec8e5a1e7f1150544020209010000000000000000",
       "fee": 33686583468,
       "payment_id": "0000000000000000",
       "recipients": [{
@@ -853,7 +853,7 @@ curl http://127.0.0.1:18088/json_rpc \
       }],
       "ring_size": 11,
       "unlock_time": 0
-    ]}
+    }]
   }
 }
 ```
@@ -1034,7 +1034,7 @@ curl http://127.0.0.1:18088/json_rpc \
     },{
       "key_image": "65158a8ee5a3b32009b85a307d85b375175870e560e08de313531c7dbbe6fc19",
       "signature": "c96e40d09dfc45cfc5ed0b76bfd7ca793469588bb0cf2b4d7b45ef23d40fd4036057b397828062e31700dc0c2da364f50cd142295a8405b9fe97418b4b745d0c"
-    },...]
+    }, ...]
   }
 }
 ```
@@ -1233,8 +1233,9 @@ curl http://127.0.0.1:18088/json_rpc \
 {
   "id": "0",
   "jsonrpc": "2.0",
-  "result": {"address":"42gt8cXJSHAL4up8XoZh7fikVuswDU7itAoaCjSQyo6fFoeTQpAcAwrQ1cs8KvFynLFSBdabhmk7HEe3HS7UsAz4LYnVPYM",
-    "info":"Wallet has been generated successfully."
+  "result": {
+    "address": "42gt8cXJSHAL4up8XoZh7fikVuswDU7itAoaCjSQyo6fFoeTQpAcAwrQ1cs8KvFynLFSBdabhmk7HEe3HS7UsAz4LYnVPYM",
+    "info": "Wallet has been generated successfully."
   }
 }
 ```
@@ -2263,7 +2264,7 @@ curl http://127.0.0.1:18088/json_rpc \
     "in": [{
       "address": "77Vx9cs1VPicFndSVgYUvTdLCJEZw9h81hXLMYsjBCXSJfUehLa9TDW3Ffh45SQa7xb6dUs18mpNxfUhQGqfwXPSMrvKhVp",
       "amount": 200000000000,
-      "amounts" [200000000000],
+      "amounts": [200000000000],
       "confirmations": 1,
       "double_spend_seen": false,
       "fee": 21650200000,
@@ -2698,7 +2699,7 @@ curl http://127.0.0.1:18088/json_rpc \
       "subaddr_index": {
         "major": 0,
         "minor": 3
-        },
+      },
       "tx_hash": "f53401f21c6a43e44d5dd7a90eba5cf580012ad0e15d050059136f8a0da34f6b",
       "pubkey": "253c35abc9e88268df40e622376572adedd391f667ef8db9f3d20789f733b35a",
       "frozen": false,
@@ -2712,7 +2713,7 @@ curl http://127.0.0.1:18088/json_rpc \
       "subaddr_index": {
         "major": 0,
         "minor": 3
-        },
+      },
       "tx_hash": "106d4391a031e5b735ded555862fec63233e34e5fa4fc7edcfdbe461c275ae5b",
       "pubkey": "c1544f7fe535a643bb2c4bebdcbcfd2b7c16681de298c2f4712d4f67273e9472",
       "frozen": false,
@@ -2726,7 +2727,7 @@ curl http://127.0.0.1:18088/json_rpc \
       "subaddr_index": {
         "major": 0,
         "minor": 3
-        },
+      },
       "tx_hash": "0bd959b59117ee1254bd8e5aa8e77ec04ef744144a1ffb2d5c1eb9380a719621",
       "pubkey": "99cb6ec639ee514c00758934aab69c965c4ff0dbc136d9199011a683be1e6df1",
       "frozen": false,
@@ -2802,19 +2803,19 @@ curl http://127.0.0.1:18088/json_rpc \
 
 ```json title="Response"
 {
-"id": "0",
-"jsonrpc": "2.0",
-"result": {
-  "transfers": [{
-    "amount": 60000000000000,
-    "global_index": 122405,
-    "key_image": "768f5144777eb23477ab7acf83562581d690abaf98ca897c03a9d2b900eb479b",
-    "spent": true,
-    "subaddr_index": 3,
-    "tx_hash": "f53401f21c6a43e44d5dd7a90eba5cf580012ad0e15d050059136f8a0da34f6b",
-    "tx_size": 159
-  }]
-}
+  "id": "0",
+  "jsonrpc": "2.0",
+  "result": {
+    "transfers": [{
+      "amount": 60000000000000,
+      "global_index": 122405,
+      "key_image": "768f5144777eb23477ab7acf83562581d690abaf98ca897c03a9d2b900eb479b",
+      "spent": true,
+      "subaddr_index": 3,
+      "tx_hash": "f53401f21c6a43e44d5dd7a90eba5cf580012ad0e15d050059136f8a0da34f6b",
+      "tx_size": 159
+    }]
+  }
 }
 ```
 
@@ -4432,7 +4433,7 @@ curl http://127.0.0.1:18088/json_rpc \
     "weight_list": [6414],
     "spent_key_images_list": [{
       "key_images": ["cea4f54494d4cc28c006af7551b57a49eb6e8aac966ffa7b169f32298213c6ca"]
-    }],
+    }]
   }
 }
 ```
@@ -4783,6 +4784,7 @@ curl http://127.0.0.1:18088/json_rpc \
     "unsigned_txset": "",
     "weight": 2791
   }
+}
 ```
 
 ### **transfer_split**
@@ -4860,14 +4862,14 @@ curl http://127.0.0.1:18088/json_rpc \
   "result": {
     "amount_list": [3000000000000],
     "fee_list": [473710000],
-    "weight_list": 51456,
+    "weight_list": [51456],
     "multisig_txset": "",
     "tx_hash_list": ["4adcdc1af3f665770cdf8fb7a380887cd07ac53c2b771bd18df5ca375d5e7540"],
     "tx_key_list": ["5b455c0f97168be652a2c03c5c68a064bb84cdae4ddef01b5c48d73a0bbb27075fb714f2ca19ea6c8ff592417e606addea6deb1d6530e2969f75681ffcbfc4075677b94a8c9197963ae38fa6f543ee68f0a4c4bbda4c453f39538f00b28e980ea08509730b51c004960101ba2f3adbc34cbbdff0d5af9dba061b523090debd06"],
-    "unsigned_txset": ""
+    "unsigned_txset": "",
     "spent_key_images_list": [{
       "key_images": ["cea4f54494d4cc28c006af7551b57a49eb6e8aac966ffa7b169f32298213c6ca"]
-    }],
+    }]
   }
 }
 ```
